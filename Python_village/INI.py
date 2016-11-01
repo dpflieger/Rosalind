@@ -7,11 +7,11 @@ def hypotenuse(a, b):
 
 # INI3. Strings and lists
 def slicing(string, a, b, c, d):
-    print((string[a:b+1], " ", string[c:d+1])
+    print((string[a:b+1], " ", string[c:d+1]))
 
 # INI4. Conditions and loops
 def sum_odd_from_range(a, b):
-    print(sum(range(a|1, b+1, 2))
+    print(sum(range(a|1, b+1, 2)))
 
 # INI5. Working with files
 def get_odd_line(file):
@@ -20,5 +20,5 @@ def get_odd_line(file):
 
 # INI6. Dictionaries
 from collections import Counter
-text =" We tried list and we tried dicts also we tried Zen"
+text ="We tried list and we tried dicts also we tried Zen"
 [print(k, v) for k, v in Counter(text.split()).items()]
