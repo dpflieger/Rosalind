@@ -16,7 +16,8 @@ def sum_odd_from_range(a, b):
 # INI5. Working with files
 def get_odd_line(file):
     with open(file, "r") as f:
-        [print(odd_line) for odd_line in f.readlines[1::2]]
+        [print(odd_line) for odd_line in f.readlines()[1::2]]
+        #print ''.join(f.readlines()[1::2])
 
 # INI6. Dictionaries
 from collections import Counter
