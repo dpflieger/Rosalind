@@ -15,7 +15,7 @@ for record in SeqIO.parse("rosalind_bfil.txt", "fastq", alphabet=None):
         else:
             break
 
-    for quality in record.letter_annotations["phred_quality"][::-1]):
+    for quality in record.letter_annotations["phred_quality"][::-1]:
         if quality < quality_threshold and not start > end:
             end -= 1
         else:
