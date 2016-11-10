@@ -4,7 +4,7 @@ quality_threshold = int(open("rosalind_bfil.txt").readlines()[0])
 
 new_records = []
 
-for record in SeqIO.parse("rosalind_bfil.txt", "fastq", alphabet=None):
+for record in SeqIO.parse("rosalind_bfil.txt", "fastq"):
 
     start, end = 0, len(record.seq)
     phred_scores = record.letter_annotations["phred_quality"]
